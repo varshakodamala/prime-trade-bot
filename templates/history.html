@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="main">
+
+<h1>Order History</h1>
+
+<br>
+
+{% for order in orders %}
+
+<div class="card" style="margin-bottom:20px;">
+
+<h2>{{ order.symbol }}</h2>
+
+<p>Side : {{ order.side }}</p>
+
+<p>Type : {{ order.type }}</p>
+
+<p>Quantity : {{ order.quantity }}</p>
+
+<p>Price : {{ order.price }}</p>
+
+<p>Time : {{ order.time }}</p>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</body>
+</html>

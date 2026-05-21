@@ -1,0 +1,343 @@
+/* ===== GOOGLE FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+    background:#020617;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ===== LAYOUT ===== */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+    width:250px;
+    background:#071132;
+    border-right:1px solid rgba(255,255,255,0.08);
+    padding:28px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.logo h1{
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.logo span{
+    color:#00e5ff;
+}
+
+.logo p{
+    color:#94a3b8;
+    line-height:1.7;
+    font-size:14px;
+    margin-bottom:40px;
+}
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    background:#0f1b45;
+    padding:16px;
+    border-radius:18px;
+    font-size:16px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    background:linear-gradient(90deg,#00c6ff,#00ff88);
+    color:black;
+    transform:translateX(5px);
+}
+
+.help-box{
+    margin-top:40px;
+    background:#0f1b45;
+    padding:18px;
+    border-radius:18px;
+}
+
+.help-box h3{
+    margin-bottom:8px;
+}
+
+.help-box p{
+    color:#94a3b8;
+    font-size:14px;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content{
+    flex:1;
+    padding:40px;
+}
+
+/* ===== TOPBAR ===== */
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.status-pill{
+    background:#0f1b45;
+    padding:12px 18px;
+    border-radius:12px;
+    color:#00ff88;
+    font-size:14px;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+/* ===== HERO ===== */
+.hero h1{
+    font-size:48px;
+    margin-bottom:18px;
+
+    background:linear-gradient(90deg,#00e5ff,#4dff88);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    color:#94a3b8;
+    max-width:700px;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ===== GRID ===== */
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    margin-top:35px;
+}
+
+/* ===== CARDS ===== */
+.trade-card,
+.status-card,
+.account-card{
+    background:#071132;
+    border:1px solid rgba(255,255,255,0.06);
+    border-radius:28px;
+    padding:32px;
+    box-shadow:0 0 25px rgba(0,229,255,0.08);
+}
+
+/* ===== CARD TITLE ===== */
+.card-title{
+    font-size:22px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.card-subtitle{
+    color:#94a3b8;
+    margin-bottom:30px;
+}
+
+/* ===== FORM ===== */
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:22px;
+}
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:10px;
+    color:#cbd5e1;
+    font-size:15px;
+}
+
+.form-group input,
+.form-group select{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:16px;
+    background:#0f1b45;
+    color:white;
+    font-size:16px;
+    border:1px solid transparent;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    border:1px solid #00e5ff;
+}
+
+/* ===== BUY SELL ===== */
+.side-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.buy-btn,
+.sell-btn{
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.buy-btn{
+    background:#0d3b2a;
+    color:#4dff88;
+    border:1px solid #00ff88;
+}
+
+.sell-btn{
+    background:#3b0d16;
+    color:#ff5f7a;
+    border:1px solid #ff5f7a;
+}
+
+/* ===== EST VALUE ===== */
+.est-box{
+    background:#0f1b45;
+    padding:20px;
+    border-radius:18px;
+}
+
+.est-box p{
+    color:#94a3b8;
+    margin-bottom:10px;
+}
+
+.est-box h2{
+    color:#4dff88;
+}
+
+/* ===== BUTTON ===== */
+.trade-btn{
+    width:100%;
+    margin-top:10px;
+    padding:16px;
+    border:none;
+    border-radius:18px;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    background:linear-gradient(90deg,#36b4ff,#4dff88);
+    color:black;
+    transition:0.3s;
+}
+
+.trade-btn:hover{
+    transform:scale(1.02);
+}
+
+/* ===== SUCCESS ===== */
+.success-box{
+    margin-top:20px;
+    background:#082c1d;
+    border:1px solid #00ff88;
+    color:#7dffb2;
+    padding:18px;
+    border-radius:18px;
+    font-size:15px;
+}
+
+/* ===== RIGHT PANEL ===== */
+.status-card h2,
+.account-card h2{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.status-list{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.status-box,
+.account-item{
+    background:#0f1b45;
+    padding:16px;
+    border-radius:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.green{
+    color:#4dff88;
+    font-weight:700;
+}
+
+/* ===== ACCOUNT ===== */
+.account-card{
+    margin-top:25px;
+}
+
+.account-item{
+    margin-top:16px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1200px){
+
+    .dashboard-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:900px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .main-content{
+        width:100%;
+        padding:20px;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+}
